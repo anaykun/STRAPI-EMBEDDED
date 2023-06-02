@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "embeddeds",
+  "info": {
+    "singularName": "embedded",
+    "pluralName": "embeddeds",
+    "displayName": "Embedded",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "image": {
+      "type": "richtext"
+    },
+    "source": {
+      "type": "richtext"
+    },
+    "departementId": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::departement.departement",
+      "inversedBy": "embeddedId"
+    },
+    "userId": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "embeddedId"
+    },
+    "slugDepartement": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

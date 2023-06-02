@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departements",
+  "info": {
+    "singularName": "departement",
+    "pluralName": "departements",
+    "displayName": "Departement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "departementId"
+    },
+    "embeddedId": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::embedded.embedded",
+      "mappedBy": "departementId"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
