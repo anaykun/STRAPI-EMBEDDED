@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-06-02T19:25:16.294Z"
+    "x-generation-date": "2023-06-04T10:00:12.056Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -895,6 +895,9 @@
                           "type": "string"
                         },
                         "code": {
+                          "type": "string"
+                        },
+                        "passCode": {
                           "type": "string"
                         },
                         "createdAt": {
@@ -1787,6 +1790,9 @@
                                         "type": "string"
                                       },
                                       "code": {
+                                        "type": "string"
+                                      },
+                                      "passCode": {
                                         "type": "string"
                                       },
                                       "createdAt": {
